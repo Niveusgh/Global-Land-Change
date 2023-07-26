@@ -1,0 +1,172 @@
+Entity,Code,Year,HALF Index (habitable land area) (Alexander et al. (2016))
+Afghanistan,AFG,2011,33.6
+Albania,ALB,2011,91.1
+Algeria,DZA,2011,49
+Angola,AGO,2011,29.7
+Antigua and Barbuda,ATG,2011,64.9
+Argentina,ARG,2011,161.8
+Armenia,ARM,2011,79.6
+Australia,AUS,2011,158
+Austria,AUT,2011,112.3
+Azerbaijan,AZE,2011,68.3
+Bahamas,BHS,2011,71.6
+Bangladesh,BGD,2011,14.9
+Barbados,BRB,2011,67
+Belarus,BLR,2011,81.5
+Belgium,BEL,2011,104.5
+Belize,BLZ,2011,37.7
+Benin,BEN,2011,22.1
+Bermuda,BMU,2011,156
+Bolivia,BOL,2011,70.5
+Bosnia and Herzegovina,BIH,2011,53.3
+Botswana,BWA,2011,56.1
+Brazil,BRA,2011,124.2
+Brunei,BRN,2011,56.8
+Bulgaria,BGR,2011,46.9
+Burkina Faso,BFA,2011,47.4
+Cabo Verde,,2011,39.5
+Cambodia,KHM,2011,22.6
+Cameroon,CMR,2011,35.4
+Canada,CAN,2011,129.8
+Central African Republic,CAF,2011,74.5
+Chad,TCD,2011,39.7
+Chile,CHL,2011,76.8
+China,CHN,2011,40.2
+Colombia,COL,2011,63.1
+Congo,COG,2011,30.2
+Costa Rica,CRI,2011,75.2
+Cote d'Ivoire,CIV,2011,27.4
+Croatia,HRV,2011,68
+Cuba,CUB,2011,49.6
+Cyprus,CYP,2011,56.1
+Czechia,CZE,2011,73.8
+Denmark,DNK,2011,136.1
+Djibouti,DJI,2011,41
+Dominica,DMA,2011,57.2
+Dominican Republic,DOM,2011,45.5
+East Timor,TLS,2011,39.6
+Ecuador,ECU,2011,75.4
+Egypt,EGY,2011,53.4
+El Salvador,SLV,2011,41.2
+Estonia,EST,2011,74.5
+Eswatini,SWZ,2011,50.2
+Ethiopia,ETH,2011,26.9
+Fiji,FJI,2011,55.3
+Finland,FIN,2011,108.4
+France,FRA,2011,122.1
+French Polynesia,PYF,2011,121.8
+Gabon,GAB,2011,58.7
+Gambia,GMB,2011,28
+Georgia,GEO,2011,44.2
+Germany,DEU,2011,98.7
+Ghana,GHA,2011,26.3
+Greece,GRC,2011,114.2
+Grenada,GRD,2011,42
+Guatemala,GTM,2011,30.2
+Guinea,GIN,2011,23.9
+Guinea-Bissau,GNB,2011,23.6
+Guyana,GUY,2011,30.1
+Haiti,HTI,2011,24
+Honduras,HND,2011,39.4
+Hungary,HUN,2011,62.1
+Iceland,ISL,2011,119.7
+India,IND,2011,22.2
+Indonesia,IDN,2011,18.3
+Iran,IRN,2011,41.6
+Iraq,IRQ,2011,20.9
+Ireland,IRL,2011,105.8
+Israel,ISR,2011,104.5
+Italy,ITA,2011,116.6
+Jamaica,JAM,2011,37.6
+Japan,JPN,2011,42.7
+Jordan,JOR,2011,46.5
+Kazakhstan,KAZ,2011,108.5
+Kenya,KEN,2011,48.8
+Kiribati,KIR,2011,29.1
+Kuwait,KWT,2011,66.7
+Kyrgyzstan,KGZ,2011,75.2
+Laos,LAO,2011,30
+Latvia,LVA,2011,70.7
+Lebanon,LBN,2011,68.3
+Lesotho,LSO,2011,36.7
+Liberia,LBR,2011,13.4
+Lithuania,LTU,2011,69.4
+Luxembourg,LUX,2011,126.5
+Madagascar,MDG,2011,29.9
+Malawi,MWI,2011,18.1
+Malaysia,MYS,2011,32
+Maldives,MDV,2011,38.9
+Mali,MLI,2011,62.2
+Malta,MLT,2011,99.3
+Mauritania,MRT,2011,66.2
+Mauritius,MUS,2011,45.6
+Mexico,MEX,2011,65.3
+Moldova,MDA,2011,29.2
+Mongolia,MNG,2011,139.8
+Montenegro,MNE,2011,76.9
+Morocco,MAR,2011,45.4
+Mozambique,MOZ,2011,13.3
+Myanmar,MMR,2011,30.7
+Namibia,NAM,2011,53.9
+Nepal,NPL,2011,37.5
+Netherlands,NLD,2011,99.9
+New Caledonia,NCL,2011,77.9
+New Zealand,NZL,2011,191.2
+Nicaragua,NIC,2011,31.8
+Niger,NER,2011,61.7
+Nigeria,NGA,2011,25.7
+North Korea,PRK,2011,21.2
+North Macedonia,MKD,2011,55.3
+Norway,NOR,2011,106.8
+Oman,OMN,2011,75.2
+Pakistan,PAK,2011,50.2
+Panama,PAN,2011,75.7
+Paraguay,PRY,2011,70.4
+Peru,PER,2011,28.5
+Philippines,PHL,2011,27.9
+Poland,POL,2011,56.4
+Portugal,PRT,2011,96.1
+Romania,ROU,2011,65.2
+Russia,RUS,2011,81.7
+Rwanda,RWA,2011,26.7
+Saint Kitts and Nevis,KNA,2011,56.2
+Saint Lucia,LCA,2011,44.8
+Saint Vincent and the Grenadines,VCT,2011,56.4
+Samoa,WSM,2011,52.7
+Sao Tome and Principe,STP,2011,26.8
+Saudi Arabia,SAU,2011,46.9
+Senegal,SEN,2011,32.1
+Serbia,SRB,2011,55.2
+Sierra Leone,SLE,2011,18
+Slovakia,SVK,2011,55.8
+Slovenia,SVN,2011,100.3
+Solomon Islands,SLB,2011,26.7
+South Africa,ZAF,2011,60.3
+South Korea,KOR,2011,58.2
+Spain,ESP,2011,79.4
+Sri Lanka,LKA,2011,16.2
+Suriname,SUR,2011,45.7
+Sweden,SWE,2011,126.4
+Switzerland,CHE,2011,111.5
+Tajikistan,TJK,2011,29.2
+Tanzania,TZA,2011,29.6
+Thailand,THA,2011,20.9
+Togo,TGO,2011,17.7
+Trinidad and Tobago,TTO,2011,40.9
+Tunisia,TUN,2011,46.8
+Turkey,TUR,2011,60.9
+Turkmenistan,TKM,2011,124
+Uganda,UGA,2011,31.5
+Ukraine,UKR,2011,52.5
+United Arab Emirates,ARE,2011,55
+United Kingdom,GBR,2011,94.66197183
+United States,USA,2011,137.6478873
+Uruguay,URY,2011,104.6
+Uzbekistan,UZB,2011,92.6
+Vanuatu,VUT,2011,39.5
+Venezuela,VEN,2011,88
+Vietnam,VNM,2011,36.9
+World,OWID_WRL,2011,49.5
+Yemen,YEM,2011,28.1
+Zambia,ZMB,2011,22.5
+Zimbabwe,ZWE,2011,33
