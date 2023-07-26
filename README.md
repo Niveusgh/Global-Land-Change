@@ -27,13 +27,6 @@ This program requires two primary steps for setup: setting up a virtual environm
 
 ### Virtual Environment 
 
-#### Via Poetry
-1. Clone the Repository to your local device.
-2. Install Poetry to your device. (For more information about poetry check out https://python-poetry.org/ )
-3. Open the project folder in terminal and type 
-`Poetry Shell`
-4. Next, install the required packages from the pyproject.toml file by typing 
-`Poetry Install`
 
 #### Via Requirements.txt
 1. Clone the Repository to your local device. 
@@ -60,9 +53,9 @@ After acquiring the API key, add it to a .env file. In the repository, locate a 
 
 1. Activate your virtual environment (as described above)
 - For Windows: 
-`python program.py`
+`python main.py`
 - For Mac/Linux:
-`python3 program.py`
+`python3 main.py`
 
 2. You'll be asked to input the year you want to analyze.
 
