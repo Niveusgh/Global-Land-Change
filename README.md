@@ -11,7 +11,7 @@ Half of the habitable land on our planet (areas free of ice and desert) is used 
 This project aims to show that the majority of agricultural lands are allocated for raising livestock. The project also examines the dynamics of global land use over time, historical land use data, and the habitable land requirements associated with different national diets. The program produces visual representations, revealing trends across various countries and regions over time.
 
 
-### Running the Program
+## Running the Program
 1. Python 3 is required. This project is written using version 3.10.4.
 2. Clone the repo from github.
 3. Setup a virtual environment and activate it.
@@ -42,18 +42,18 @@ The following requirements have been met with this project:
 - *All data are from ourworldindata.org* 
 
 2. **Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set.** </br>
-The project involves the merging of the two CSV files. The datasets are cleaned and preprocessed to ensure data quality and usability. The merged file then used to calculate the proportion of total cereals allocated to human food for each year and each entity.
+The project involves the merging of the two CSV files. The datasets are cleaned and preprocessed to ensure data quality and usability. The merged file then used to calculate the proportion of total cereals allocated to human food for each country.
 
-3. **Make 3 matplotlib or seaborn (or another plotting library) visualizations to display your data.** </br>
-Three Seaborn Plots are generated as output. The first visualization shows global trends in different land use categories. The second visualization illustrates land use patterns by region, and the third presents a time-series analysis of cereal distribution to different uses.
+3. **Make 3 matplotlib or seaborn visualizations to display your data.** </br>
+Three Seaborn Plots are generated as output. The first visualization shows global trends in different land categories. The second visualization illustrates land use patterns by region, and the third presents a time-series analysis of cereal distribution to different uses.
 
 4. **Utilize a virtual environment and include instructions in your README on how the user should set one up.** </br>
-This project uses Poetry for environment management. However, a traditional VENV can also be used with the included requirements.txt file.
+This project uses a traditional VENV, it can be used with the included requirements.txt file.
 
 5. **Annotate your .py files with well-written comments and a clear README.md (only applicable if you’re not using a jupyter notebook).** </br>
 This README file serves the purpose of providing comprehensive guidance to users. 
 
-
+---
 ## Data Analysis Conclusions 
 Indonedia and Malaysia are the biggest contributors. Combined, they produce 87% of global palm oil. And the deforestation data showin that the tropical forest in Indonesia has been declining over the past 3 decades. 
 - The graph 'Top 10 Palm Production Country' shows the golbal trend of top palm producers. 
