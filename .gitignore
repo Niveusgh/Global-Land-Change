@@ -6,3 +6,7 @@
 
 # virtual environment directory 
 myenv/
+
+#cache
+_pycache_/
+
