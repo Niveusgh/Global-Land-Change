@@ -16,9 +16,9 @@ This project aims to show that the majority of agricultural lands are allocated 
 2. Clone the repo from github.
 3. Setup a virtual environment and activate it.
 4. To make sure you have all the necessary packages, run
-    ```
-    "pip install -r requirements.txt". 
-    ```
+```
+"pip install -r requirements.txt". 
+```
  The following packages will be required to run the program: 
 - pandas, 
 - numpy, 
@@ -39,7 +39,7 @@ The following requirements have been met with this project:
 1. **Read and analyze data from Two CSV files.**
 - "global-land-use-since-10000bc.csv"
 - "cereal_and_land_use_all_years_country.csv". 
-    *All data are from ourworldindata.org* 
+- *All data are from ourworldindata.org* 
 
 2. **Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set.**
 The project involves the merging of the two CSV files. The datasets are cleaned and preprocessed to ensure data quality and usability. The merged file then used to calculate the proportion of total cereals allocated to human food for each year and each entity.
