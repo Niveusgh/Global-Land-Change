@@ -1,64 +1,36 @@
 import pandas as pd
 import numpy as np
-
-## clean data in Olympic_Data.csv and Population.csv (from Kaggle)
-#
-# Usage: 
-# $ python clean.py data/Olympic_Data.csv and data/Population.csv results/clean.csv
-
-# where:
-# Olympic_Data.csv    = C:\Users\ahaas.SDDOMAIN\Desktop\Olympic_Data.csv\data
-# data/Population     = C:\Users\ahaas.SDDOMAIN\Desktop\Population.csv\data
-
-import pandas as pd
-import numpy as np
-import select as sql   
+from pandasql import sqldf
 
 # Read in Data files
-P1_df = pd.read_csv('data/Olympic_Data.csv')
-P2_df = pd.read_csv('data/Population.csv')
+country_land = pd.read_csv('data/country_land.csv')
+land_use_df = pd.read_csv('data/global-land-use-since-10000bc.csv')
 
-# drop unneeded columns
-P2_df=P2_df.drop(['Rank', 'Country/Territory', 'Capital', 'Continent'], axis =1)
-P1_df=P1_df.drop(['ID', 'Games','Height', 'Weight', 'Team'], axis =1)
+# Pivot the dataframe to turn the 'Entity' values into columns
+pivoted_df = land_use_df.pivot(index='Year', columns='Entity', values='area_aggregated_categories')
 
-# drop olympians that didnt medal
-P1_df.dropna(subset = ['Medal'], inplace=True)
-#P1_df.head()
+# Reset the index
+pivoted_df.reset_index(inplace=True)
 
-# rename columns
-P2_df.rename(columns = {'CCA3':'NOC'}, inplace = True)
+# Filter out the rows where 'Year' is before -2000
+filtered_df = pivoted_df[pivoted_df['Year'] >= -2000].copy()
 
-# converting to number
-#year=1960
-#while year!=2022:
-    #year=str(year)
-    #P2_df[year]=P2_df[year].fillna(0)
-    #for row in P2_df[year]:
-        #row=int(row)
-        #new_row=("{:,}".format(row))
-        #P2_df[year]=P2_df[year].replace([row],new_row)
-    #year=int(year)+1
-#P2_df.head()
+# Add 'Entity' and 'Code' columns
+filtered_df.loc[:, 'Entity'] = 'World'
+filtered_df.loc[:, 'Code'] = 'OWID_WRL'
 
-#P1_df.head()
-
-#num_of_rows = P1_df.shape
-#print(num_of_rows)
-
-#identify NOC that is not the same
-#P1_df[P1_df['df1']['NOC'].isin(P2_df['df2']['NOC'])]
+# Reorder the columns
+filtered_df = filtered_df[['Entity', 'Code', 'Year', 'Cropland', 'Pasture', 'Permanent ice', 'Semi-natural land', 'Urban', 'Villages', 'Wild barren land', 'Wild woodlands']]
 
 
-# merge data sets
+# Display the first few rows of the filtered dataframe
+filtered_df.head()
 
-output4 = pd.merge(P1_df, P2_df,
-                   on= 'NOC',
-                   how='outer')
+# Perform an outer join to include all data from both dataframes
+clean_combined = pd.merge(country_land, filtered_df, how='outer', on=['Entity', 'Code', 'Year'])
 
-# drop countries that have never won a medal
-output4.dropna(subset = ['Medal'], inplace=True)
+# Display the first few rows of the final dataframe
+clean_combined.head()
 
-output4.tail(10)
-
-output4.to_csv('results/clean.csv')
+#output
+clean_combined.to_csv('data/clean_combined.csv')
