@@ -3,6 +3,7 @@
 # Global Land Use Data Analyst
 ### *Project by Thea Francis*
 
+---
 ## Introduction
 Half of the habitable land on our planet (areas free of ice and desert) is used for agriculture. The expanding agricultural landscape is the leading cause of deforestation.
 
@@ -15,12 +16,12 @@ This project aims to show that the majority of agricultural lands are allocated 
 2. Clone the repo from github.
 3. Setup a virtual environment and activate it.
 4. To make sure you have all the necessary packages, run
-```
- "pip install -r requirements.txt". 
- ```
+    ```
+    "pip install -r requirements.txt". 
+    ```
  The following packages will be required to run the program: 
 - pandas, 
-- numby, 
+- numpy, 
 - matplotlib.pyplot, 
 - scipy,
 - seaborn </br>
@@ -38,11 +39,10 @@ The following requirements have been met with this project:
 1. **Read and analyze data from Two CSV files.**
 - "global-land-use-since-10000bc.csv"
 - "cereal_and_land_use_all_years_country.csv". 
-All data are from ourworldindata.org 
-
+    *All data are from ourworldindata.org* 
 
 2. **Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set.**
-The project involves the merging of the two CSV files. The datasets are cleaned and preprocessed to ensure data quality and usability. I then calculated the proportion of total cereals allocated to human food for each year and each entity.
+The project involves the merging of the two CSV files. The datasets are cleaned and preprocessed to ensure data quality and usability. The merged file then used to calculate the proportion of total cereals allocated to human food for each year and each entity.
 
 3. **Make 3 matplotlib or seaborn (or another plotting library) visualizations to display your data.**
 Three Seaborn Plots are generated as output. The first visualization shows global trends in different land use categories. The second visualization illustrates land use patterns by region, and the third presents a time-series analysis of cereal distribution to different uses.
