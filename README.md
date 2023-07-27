@@ -4,7 +4,7 @@
 ### *Project by Thea Francis*
 
 ---
-### Introduction
+
 Half of the habitable land on our planet (areas free of ice and desert) is used for agriculture. The expanding agricultural landscape is the leading cause of deforestation.
 
 ## About the Project
