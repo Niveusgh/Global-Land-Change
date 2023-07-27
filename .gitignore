@@ -3,3 +3,6 @@
 .AppleDouble
 .LSOverride
 .ipynb_checkpoints 
+
+# virtual environment directory 
+myenv/

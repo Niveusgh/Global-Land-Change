@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from pandasql import sqldf
 
 # Read in Data files
 country_land = pd.read_csv('data/country_land.csv')

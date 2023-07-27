@@ -7,7 +7,7 @@
 Half of the habitable land on our planet (areas free of ice and desert) is used for agriculture. The expanding agricultural landscape is the leading cause of deforestation.
 
 ## About the Project
-This project aims to show that a large portion of agricultural crops is allocated for livestock feed. The project also examines the dynamics of global land use over time, historical land use data, and the habitale land requirements associated with different national diets. The program produces visual representations, revealing trends across various countries and regions over time.
+This project aims to show that the majority of agricultural lands are allocated for raising livestock. The project also examines the dynamics of global land use over time, historical land use data, and the habitable land requirements associated with different national diets. The program produces visual representations, revealing trends across various countries and regions over time.
 
 
 ### Running the Program
