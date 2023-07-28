@@ -18,6 +18,8 @@ The lists are as follows:
 6.oceania_countries: List of countries in Oceania.
 7.not_countries: List of entities that are not recognized as independent countries.
 8.all_countries: List of all countries in the world.
+9.country_name_corrections
+10.missing_countries
 
 Usage:
 - Get the length of a list: `length = len(list_name)`
@@ -189,3 +191,26 @@ all_countries = [
 # Removed "Taiwan*" from the list. Note: Taiwan is not included.
 # Replaced "Korea, South" with "South Korea".
 # Updated "West Bank and Gaza" to "Palestine" for consistency.
+
+country_name_corrections = {
+    'United States of America': 'United States',
+    'Republic of the Congo': 'Congo',
+    'United Republic of Tanzania': 'Tanzania',
+    'The Bahamas': 'Bahamas',
+    'Republic of Serbia': 'Serbia',
+    'Tazania': 'Tanzania',
+    'Ivory Coast': "Cote d'Ivoire",
+}
+
+# missing countries
+missing_countries = ['South Sudan', 'Somalia', 'Syria', 'Somaliland', 'Western Sahara',
+                     'Democratic Republic of the Congo', 'Bhutan', 'Kosovo', 'Libya', 
+                     'Sudan', 'Eritrea', 'Liechtenstein', 'Qatar', 'San Marino', 
+                     'Monaco', 'eSwatini', 'Burundi', 'Andorra', 'Brazilian Island', 
+                     'Papua New Guinea', 'Equatorial Guinea', 'Vatican', 'Northern Cyprus', 
+                     'Cyprus No Mans Area', 'Kashmir', 'Southern Patagonian Ice Field', 
+                     'Bir Tawil', 'Antarctica', 'Taiwan', 'Seychelles', 'Marshall Islands', 
+                     'Comoros', 'São Tomé and Principe', 'Singapore', 'Tonga', 'Tuvalu', 
+                     'Nauru', 'Federated States of Micronesia', 'Palau', 'Bahrain', 
+                     'Spratly Islands', 'Bajo Nuevo Bank (Petrel Is.)', 'Serranilla Bank', 
+                     'Scarborough Reef']

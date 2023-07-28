@@ -5,6 +5,8 @@ import seaborn as sns
 
 # Load and preprocess data
 df = pd.read_csv('data/clean_combined.csv')
+
+# skipped
 df['Total Cereal Allocation'] = df[['Cereals allocated to other uses', 'Cereals allocated to animal feed', 'Cereals allocated to human food']].sum(axis=1)
 df['Proportion Allocated to Human Food'] = df['Cereals allocated to human food'] / df['Total Cereal Allocation']
 

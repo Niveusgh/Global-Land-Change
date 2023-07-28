@@ -3,21 +3,23 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
+from country_name import *
 
 # Load data
-agriculture_data = pd.read_csv('data/share-of-global-habitable-land-needed-for-agriculture-if-everyone-had-the-diet-of.csv')
+agriculture_data = pd.read_csv('data/habitable-land-needed.csv')
 world_map = gpd.read_file('image/ne_10m_admin_0_countries.shp')
 
 # Correct country names
-country_name_corrections = {
-    'United States of America': 'United States',
-    'Republic of the Congo': 'Congo',
-    'United Republic of Tanzania': 'Tanzania',
-    'The Bahamas': 'Bahamas',
-    'Republic of Serbia': 'Serbia',
-    'Tazania': 'Tanzania',
-    'Ivory Coast': "Cote d'Ivoire",
-}
+# country_name_corrections = {
+#     'United States of America': 'United States',
+#     'Republic of the Congo': 'Congo',
+#     'United Republic of Tanzania': 'Tanzania',
+#     'The Bahamas': 'Bahamas',
+#     'Republic of Serbia': 'Serbia',
+#     'Tazania': 'Tanzania',
+#     'Ivory Coast': "Cote d'Ivoire",
+# }
+
 world_map['SOVEREIGNT'] = world_map['SOVEREIGNT'].replace(country_name_corrections)
 
 # Remove leading/trailing spaces
@@ -30,17 +32,17 @@ country_data = agriculture_data[agriculture_data['Entity'] != 'World']
 
 # Add missing countries
 
-missing_countries = ['South Sudan', 'Somalia', 'Syria', 'Somaliland', 'Western Sahara',
-                     'Democratic Republic of the Congo', 'Bhutan', 'Kosovo', 'Libya', 
-                     'Sudan', 'Eritrea', 'Liechtenstein', 'Qatar', 'San Marino', 
-                     'Monaco', 'eSwatini', 'Burundi', 'Andorra', 'Brazilian Island', 
-                     'Papua New Guinea', 'Equatorial Guinea', 'Vatican', 'Northern Cyprus', 
-                     'Cyprus No Mans Area', 'Kashmir', 'Southern Patagonian Ice Field', 
-                     'Bir Tawil', 'Antarctica', 'Taiwan', 'Seychelles', 'Marshall Islands', 
-                     'Comoros', 'São Tomé and Principe', 'Singapore', 'Tonga', 'Tuvalu', 
-                     'Nauru', 'Federated States of Micronesia', 'Palau', 'Bahrain', 
-                     'Spratly Islands', 'Bajo Nuevo Bank (Petrel Is.)', 'Serranilla Bank', 
-                     'Scarborough Reef']
+# missing_countries = ['South Sudan', 'Somalia', 'Syria', 'Somaliland', 'Western Sahara',
+#                      'Democratic Republic of the Congo', 'Bhutan', 'Kosovo', 'Libya', 
+#                      'Sudan', 'Eritrea', 'Liechtenstein', 'Qatar', 'San Marino', 
+#                      'Monaco', 'eSwatini', 'Burundi', 'Andorra', 'Brazilian Island', 
+#                      'Papua New Guinea', 'Equatorial Guinea', 'Vatican', 'Northern Cyprus', 
+#                      'Cyprus No Mans Area', 'Kashmir', 'Southern Patagonian Ice Field', 
+#                      'Bir Tawil', 'Antarctica', 'Taiwan', 'Seychelles', 'Marshall Islands', 
+#                      'Comoros', 'São Tomé and Principe', 'Singapore', 'Tonga', 'Tuvalu', 
+#                      'Nauru', 'Federated States of Micronesia', 'Palau', 'Bahrain', 
+#                      'Spratly Islands', 'Bajo Nuevo Bank (Petrel Is.)', 'Serranilla Bank', 
+#                      'Scarborough Reef']
 
 missing_countries_df = pd.DataFrame(missing_countries, columns=['Entity'])
 missing_countries_df['HALF Index (habitable land area) (Alexander et al. (2016))'] = np.nan
