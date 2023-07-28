@@ -42,22 +42,17 @@ The following requirements have been met with this project:
 - "cereal_and_land_use_all_years_country.csv". 
 - *All data are from ourworldindata.org* 
 
-2. **Clean your data and perform a pandas merge with your two data sets, then calculate some new values based on the new data set.** </br>
-The project involves the merging of the two CSV files. The datasets are cleaned and preprocessed to ensure data usability in "clean.py". The merged file then used to calculate the proportion of total cereals allocated to human food for each country.
+2. **Clean data and perform a pandas merge, then calculate some new values.** </br>
+The project merged two CSV files. The datasets are cleaned and preprocessed in "clean.py". The merged file then used to calculate the proportion of total cereals allocated.
 
-3. **Make 3 matplotlib or seaborn visualizations to display your data.** </br>
-Three Seaborn Plots are generated as output. The first visualization shows global trends in different land categories. The second visualization illustrates land use patterns by region, and the third presents a time-series analysis of cereal distribution to different uses.
+3. **Make a visualization with Bokeh** </br>
+Two Plots are generated as output. 1 Bokeh chart is generated.
 
 4. **Utilize a virtual environment and include instructions in your README on how the user should set one up.** </br>
 This project uses a traditional VENV, it can be used with the included "requirements.txt" file.
 
 5. **Annotate your .py files with well-written comments and a clear README.md (only applicable if you’re not using a jupyter notebook).** </br>
-This README file serves the purpose of providing comprehensive guidance to users. 
+This README file serves the purpose of providing comprehensive guidance to users.
 
 ---
 ## Data Analysis Conclusions 
-Indonedia and Malaysia are the biggest contributors. Combined, they produce 87% of global palm oil. And the deforestation data showin that the tropical forest in Indonesia has been declining over the past 3 decades. 
-- The graph 'Change in Global Land Use Over Time (AD 200 to Present)' shows the golbal trend of top palm producers. 
-- The graph 'All other countries in the world combined' shows the percentage Indonesia and Malaysia compare with the all other countries. 
-- The graph 'Forest Change in Acres' shows the changes of forest in 30 years of a few different countries. 
-- The graph 'Palm oil production trend world wide' shows the world wide trend of palm oil production.
