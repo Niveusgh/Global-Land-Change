@@ -5,8 +5,8 @@ import numpy as np
 import seaborn as sns
 import geopandas as gpd
 from IPython.display import Image
-from bokeh.plotting import  figure, output_notebook, show
-from bokeh.io import output_notebook
+from bokeh.plotting import  figure, output_notebook, show, output_file
+from bokeh.io import output_notebook, output_file
 from bokeh.models import ColumnDataSource, HoverTool, CustomJS
 from bokeh.models.widgets import Select
 from bokeh.transform import factor_cmap
@@ -111,9 +111,9 @@ world = pd.concat([merged_data, world_data])
 world_average = world_data['HALF Index (habitable land area) (Alexander et al. (2016))'].values[0]
 
 # Add the title and the description
-plt.suptitle("Share of global habitable land needed if everyone had the diet of...", fontsize=14, fontweight='bold')
+# plt.suptitle("Share of global habitable land needed if everyone had the diet of...", fontsize=14, fontweight='bold')
 
-
+print("Share of global habitable land needed if everyone had the diet of...")
 # Assign color categories
 world['color_category'] = np.where(
     world['HALF Index (habitable land area) (Alexander et al. (2016))'].isnull(), 'no_data',
@@ -146,7 +146,8 @@ ax.set_yticks([])
 plt.show()
 
 # Ensure output_notebook() is called in the same cell
-output_notebook()
+# output_notebook()
+output_file("output_plot.html")
 
 # Create 'Proportion Allocated to Animal Feed' and 'Proportion Allocated to Other Uses' columns
 df['Total Cereal Allocation'] = df[['Cereals allocated to other uses', 'Cereals allocated to animal feed', 'Cereals allocated to human food']].sum(axis=1)
@@ -191,7 +192,7 @@ countries = df_clean['Entity'].unique()
 sources = {country: ColumnDataSource(df_clean[df_clean['Entity'] == country]) for country in countries}
 
 # Create the initial figure
-p = figure(width=800, height=250, x_axis_type="linear", title=countries[0])
+p = figure(width=1000, height=500, x_axis_type="linear", title=countries[0])
 p.xaxis.axis_label = 'Year'
 p.yaxis.axis_label = 'Cereal Allocation (%)'
 
@@ -237,4 +238,4 @@ country_select.js_on_change('value', callback)
 # Show the plot and the Select widget
 show(bokeh_column(country_select, p))
 
-print(" Europe less than one-third of cereal production is used for human consumption, and in the US only 10 percent is.")
+print(" In Europe less than one-third of cereal production is used for human consumption, and in the US only 10 percent is.")
